@@ -187,7 +187,7 @@
                                   <td style="width: 45%;">test complaint</td>
                                   <td style="width: 45%;">Active/ Deactive</td>
                                   <td style="width: 10%; text-align: center;">
-                                    <button type="button" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#addPhoneModal">Complaint Form</button>
+                                    <button type="button" class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#addPhoneModal">Form</button>
                                     <button class="btn btn-danger btn-sm" onclick="deleteComplaint(this)">Delete</button>
                                   </td>
                                 </tr>
@@ -214,8 +214,8 @@
                               <input type="text" class="form-control border px-3" id="customer_name" placeholder="Enter Customer Name" required>
                           </div>
                           <div class="mb-3">
-                            <label for="name" class="form-label">Follow Up </label>
-                            <input type="text" class="form-control border px-3" id="followup" placeholder="Enter Follow UP Detail" required>
+                            <label for="name" class="form-label">Amount</label>
+                            <input type="text" class="form-control border px-3" id="amount" placeholder="Enter Amount" required>
                         </div>
                         <div class="mb-3">
                           <label for="name" class="form-label">FeedBack </label>
@@ -224,9 +224,12 @@
                       </form>
                   </div>
                   <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-warning" onclick="addDemo()">Save Demo</button>
-                      <button type="button" class="btn btn-success" onclick="addId()">Save ID</button>
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Demo Send</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">ID Created</button>
+                    <button type="button" class="btn btn-info" data-bs-dismiss="modal">Follow Up</button>
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Complaint</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                    
                   </div>
               </div>
           </div>

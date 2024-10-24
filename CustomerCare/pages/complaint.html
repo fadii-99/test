@@ -74,7 +74,14 @@
             <span class="nav-link-text ms-1">New Ids</span>
           </a>
         </li>
-
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../pages/reject.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">view_in_ar</i>
+            </div>
+            <span class="nav-link-text ms-1">Rejected</span>
+          </a>
+        </li>
       </ul>
     </div>
   </aside>
@@ -188,22 +195,15 @@
                         <label for="name" class="form-label">Amount </label>
                         <input type="text" class="form-control border px-3" id="followup" placeholder="Enter Amount" required>
                       </div>
-                      <div class="mb-3">
-                        <label for="exchange" class="form-label">Exchange</label>
-                        <select class="form-select px-3" id="exchange" required >
-                            <option value="" disabled selected>Select Form Status</option>
-                              <option value="">Demo Send</option>
-                              <option value="">ID Created</option>
-                              <option value="">Follow Up</option>
-                              <option value="">Complaint</option>
-                              <option value="">Reject</option>
-                        </select>
-                    </div>
                   </form>
               </div>
               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-warning" >Save Form</button>
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Demo Send</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ID Created</button>
+                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Follow Up</button>
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Complaint</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                    
               </div>
             </div>
         </div>

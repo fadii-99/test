@@ -28,7 +28,7 @@
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
       <a class="navbar-brand m-0" href="" target="_blank">
         <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
-        <span class="ms-1 font-weight-bold text-white">Material Dashboard 2</span>
+        <span class="ms-1 font-weight-bold text-white">Calling App</span>
       </a>
     </div>
     <hr class="horizontal light mt-0 mb-2">
@@ -51,11 +51,11 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/walkingcustomer.html">
+          <a class="nav-link text-white " href="../pages/assign-numbers.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">view_in_ar</i>
+              <i class="material-icons opacity-10">assignment</i>
             </div>
-            <span class="nav-link-text ms-1">Walking Customer</span>
+            <span class="nav-link-text ms-1">Assign Numbers</span>
           </a>
         </li>
         <li class="nav-item">
@@ -67,27 +67,19 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/complaint.html">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">receipt_long</i>
-            </div>
-            <span class="nav-link-text ms-1">Complaint</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/sendDemo.html">
+          <a class="nav-link text-white " href="../pages/demosend.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">view_in_ar</i>
             </div>
-            <span class="nav-link-text ms-1">Send Demo</span>
+            <span class="nav-link-text ms-1">Demo Send</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/sendIds.html">
+          <a class="nav-link text-white " href="../pages/noofcalls.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">view_in_ar</i>
             </div>
-            <span class="nav-link-text ms-1">Send Id</span>
+            <span class="nav-link-text ms-1">No of Calls</span>
           </a>
         </li>
         <li class="nav-item">
@@ -99,11 +91,11 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="../pages/reject.html">
+          <a class="nav-link text-white " href="../pages/newids.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">view_in_ar</i>
             </div>
-            <span class="nav-link-text ms-1">Reject</span>
+            <span class="nav-link-text ms-1">New Customer Ids</span>
           </a>
         </li>
       </ul>
@@ -115,7 +107,7 @@
       <div class="container-fluid py-1 px-3">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
-            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">User</a></li>
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Assistant</a></li>
             <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Dashboard</li>
           </ol>
         </nav>
@@ -133,7 +125,7 @@
             <li class="nav-item dropdown pe-2 d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa fa-user cursor-pointer"></i>
-                <span class="d-sm-inline d-none">User</span>
+                <span class="d-sm-inline d-none">Assistant</span>
               </a>
               <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
                 <li class="mb-2">
@@ -164,35 +156,25 @@
                   <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
   
                       <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 d-flex justify-content-between align-items-center px-3">
-                          <p style="color: white;"><strong>Walking Customer Table</strong></p>                        
-                          
-                               
-                       </div>
+                          <p style="color: white;"><strong>Follow Up Table</strong></p> 
+                      </div>
                   </div>
                   <div class="card-body px-0 pb-2 px-3">
                       <div class="table-responsive p-0">
-                          <table id="walkingCustomerTable" class="table align-items-center mb-0 table-striped table-hover px-2">
+                          <table id="exchangeTable" class="table align-items-center mb-0 table-striped table-hover px-2">
                               <thead>
                                   <tr>
                                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Customer Name</th>
-                                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Follow up</th>
-                                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Feedback</th>
                                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Action</th>
                                   </tr>
                               </thead>
-                              
-                              <tbody id="walkingCustomerTableBody">
-                                 
-                                  <tr>
-                                    <td style="width: 45%;">Customer Name</td>
-                                    <td style="width: 45%;">Follow UP</td>
-                                    <td style="width: 45%;">FeedBack</td>
-                                    <td style="width: 10%; text-align: center;">
-                                      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#addWalkingCustomerModel">Form</button>
-                                      <button class="btn btn-danger btn-sm">Delete</button>
-                                    </td>
-                                  </tr>
-                               
+                              <tbody id="exchangeTableBody">
+                                <tr data-user-id="" data-exchange-id="">
+                                  <td style="width: 45%;">exchange-name</td>
+                                  <td style="width: 10%; text-align: center;">
+                                    <button class="btn btn-danger btn-sm">Delete</button>
+                                  </td>
+                                </tr>
                               </tbody>
                           </table>
                       </div>
@@ -200,46 +182,6 @@
               </div>
           </div>
       </div>
-      <!-- Add Walking Customer Modal -->
-    <div class="modal fade" id="addWalkingCustomerModel" tabindex="-1" aria-labelledby="addWalkingCustomerModelLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header d-flex justify-content-between align-items-center">
-                  <h5 class="modal-title" id="addWalkingCustomerModelLabel">Follow Up Form</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form id="addWalkingCustomerForm">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Customer Name </label>
-                        <input type="text" class="form-control border px-3" id="customer_name" placeholder="Enter Customer Name" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Customer Phone Number </label>
-                      <input type="text" class="form-control border px-3" id="phone_number" placeholder="Enter Phone Number" required>
-                  </div>
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Amount </label>
-                      <input type="text" class="form-control border px-3" id="amount" placeholder="Enter Amount" required>
-                    </div>
-                    <div class="mb-3">
-                      <label for="name" class="form-label">FeedBack </label>
-                      <input type="text" class="form-control border px-3" id="feedback" placeholder="Enter FeedBack" required>
-                    </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Demo Send</button>
-                <button type="button" class="btn btn-success" data-bs-dismiss="modal">ID Created</button>
-                <button type="button" class="btn btn-info" data-bs-dismiss="modal">Follow Up</button>
-                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Complaint</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                    
-              </div>
-          </div>
-      </div>
-    </div>
-    <!-- End Walking Customer Modal -->
       <footer class="footer py-4  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
