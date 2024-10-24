@@ -248,44 +248,7 @@
                   </div>
                   <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" onclick="addUser()">Save User</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-  
-      <!-- Edit User Modal -->
-      <div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-header d-flex justify-content-between align-items-center">
-                      <h5 class="modal-title" id="editUserModalLabel" style="color:white">Edit User</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                      <form id="editUserForm">
-                          @csrf
-                          <input type="hidden" id="editUserId">
-                          <div class="mb-3">
-                              <label for="editName" class="form-label">User Name</label>
-                              <input type="text" class="form-control border px-3" id="editName" required>
-                          </div>
-                          <div class="mb-3">
-                              <label for="editPassword" class="form-label">Password (leave empty to keep unchanged)</label>
-                              <input type="password" class="form-control border px-3" id="editPassword">
-                          </div>
-                          <div class="mb-3">
-                              <label for="editExchange" class="form-label">Exchange</label>
-                              <select class="form-select px-3" id="editExchange" required>
-                                  <option value="" disabled selected>Select an exchange</option>
-                                      <option value="name">name </option>
-                              </select>
-                          </div>
-                      </form>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" onclick="updateUser()">Save Changes</button>
+                      <button type="button" class="btn btn-primary">Save User</button>
                   </div>
               </div>
           </div>
